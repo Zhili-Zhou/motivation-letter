@@ -1,0 +1,199 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+
+@font-face {
+  font-family: Avant;
+  src: url('ITCAvantGardeStd-BoldObl.otf');
+}
+
+@font-face {
+  font-family: Avant_Normal;
+  src: url('ITCAvantGardeStd-BkObl.textClipping');
+}
+
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+:root {
+  --dark-bg: rgba(131, 167, 141);
+  --spacing: 350px;
+
+  font-family: Avant_Normal, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main {
+  width: 120vw;
+  color: #180730;
+  z-index: 99;
+  position: absolute;
+  
+  margin: 0px auto;
+  padding: 120px 0px;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+
+
+h1, h2, h3, blockquote{
+  font-family: Avant;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h3 {
+  margin-left: 20px;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
+  header {
+    background: var(--dark-bg);
+    grid-column: 2 / span 5;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: var(--spacing);
+    border-radius: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: currentColor;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  section {
+    grid-column: 2 / 8;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+    border-radius: 10px;
+  }
+
+  main p {
+    font-family: Avant_Normal;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    display: inline;
+    line-height: 0.5;
+  }
+  main p1{
+    font-size: 1rem;
+    display: inline;
+    line-height: 0.5;
+  }
+  main p2{
+    font-size: 0.7rem;
+    display: inline;
+    line-height: 0.5;
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing);
+    
+  }
+
+  blockquote p {
+    color: rgb(131, 167, 141);
+    background-color: #c4d7d6;
+    font-size: 4rem;
+    display: inline;
+    line-height: 1;
+  }
+  blockquote p1 {
+    color: rgb(131, 167, 141);
+    font-size: 6rem;
+    display: inline;
+    line-height: 0.5;
+    font-family: Times New Roman;
+   
+  }
+
+blockquote p2 {
+    color: rgb(131, 167, 141);
+    font-size: 3rem;
+    display: inline;
+    line-height: 0.5;
+    background-color: #c4d7d6;
+  }
+  
+
+  .left {
+    grid-column: 6 / 12;
+  }
+
+  
+
+  
+
+  .faqs-container .faq-header{
+    display:flex;
+    margin-left: 10px;
+    border-radius: 25px;
+    background: #c4d7d6;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .faqs-container .faq-header .open,
+  .faqs-container .faq-header .close {
+  position: absolute;
+  right: 0;
+  padding: 0 32px;
+  font-size: 22px;
+  font-weight: bold;
+  transform: translateY(-8px);
+  opacity: 0;
+  transition: all 500ms;
+}
+  
+
+  .faqs-container .faq-header .open.active,
+  .faqs-container .faq-header .close.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+  .faqs-container .content {
+    padding: 0 32px;
+    margin-left: 10px;
+    background: #83a78d;
+    line-height: 2;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 500ms;
+  }
+  
+
+  .faqs-container .content.active{
+    max-height: 600px;
+  }
+
+
+  
